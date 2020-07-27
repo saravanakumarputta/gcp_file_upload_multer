@@ -7,7 +7,7 @@ var uploadHandler = multer({
     autoRetry: true,
     bucket: 'asia.artifacts.mymernstackapp.appspot.com',
     projectId: 'mymernstackapp',
-    keyFilename: './mymernstackapp-28ff52c9b6ff.json',
+    keyFilename: './key.json',
     filename: (req, file, cb) => {
       cb(null, `/projectimages/${Date.now()}_${file.originalname}`);
     }
